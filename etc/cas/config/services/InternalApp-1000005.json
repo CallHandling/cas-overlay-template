@@ -1,0 +1,7 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "http://10.0.0.27/auth",
+  "name": "InternalApp",
+  "id": 1000005,
+  "evaluationOrder": 10
+}
