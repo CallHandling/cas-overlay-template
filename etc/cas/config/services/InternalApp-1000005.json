@@ -4,6 +4,7 @@
   "name": "InternalApp",
   "id": 1000005,
   "evaluationOrder": 10,
+  "jsonFormat": true,
   "properties" : {
     "@class" : "java.util.HashMap",
     "jwtAsResponse" : {
