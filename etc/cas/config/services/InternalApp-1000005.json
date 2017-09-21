@@ -3,13 +3,12 @@
   "serviceId" : "http://10.0.0.27/auth",
   "name": "InternalApp",
   "id": 1000005,
-  "evaluationOrder": 10
-  /*,
+  "evaluationOrder": 10,
   "properties" : {
     "@class" : "java.util.HashMap",
     "jwtAsResponse" : {
       "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
       "values" : [ "java.util.HashSet", [ "true" ] ]
     }
-  }*/
+  }
 }
