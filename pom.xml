@@ -66,6 +66,77 @@
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oauth-webflow</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-json-service-registry</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+	<dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oidc</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+	<dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oidc-core</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+	 <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oauth</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+	<dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oauth-core</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+	<dependency>
+     	  <groupId>org.apereo.cas</groupId>
+          <artifactId>cas-server-support-ldap</artifactId>
+          <version>${cas.version}</version>
+	</dependency>
+        <dependency>
+         <groupId>org.apereo.cas</groupId>
+         <artifactId>cas-server-support-shibboleth-attributes</artifactId>
+        <version>${cas.version}</version>
+       </dependency>
+
+       <dependency>
+	   <groupId>org.apereo.cas</groupId>
+	   <artifactId>cas-server-support-jdbc-drivers</artifactId>
+   	   <version>${cas.version}</version>
+    	</dependency>
+	<dependency>
+	    <groupId>org.apereo.cas</groupId>
+	    <artifactId>cas-server-support-jdbc</artifactId>
+	    <version>${cas.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+    	    <version>9.3-1102.jdbc41</version>
+	</dependency>
+	<dependency>
+    		<groupId>org.apereo.service.persondir</groupId>
+		<artifactId>person-directory-api</artifactId>
+		<version>${person.directory.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apereo.service.persondir</groupId>
+		<artifactId>person-directory-impl</artifactId>
+		<version>${person.directory.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apereo.cas</groupId>
+		<artifactId>cas-server-support-token</artifactId>
+		<version>${cas.version}</version>
+	</dependency>
     </dependencies>
 
     <properties>
@@ -76,6 +147,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<person.directory.version>1.8.5</person.directory.version>
     </properties>
 
     <repositories>
@@ -107,6 +179,15 @@
             <id>spring-milestones</id>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+	<repository>
+      	  <id>central</id>
+          <name>Clojars Repository</name>
+          <url>http://clojars.org/repo/</url>
+          <layout>default</layout>
+          <snapshots>
+            <enabled>false</enabled>
+         </snapshots>
+    </repository>
     </repositories>
 
     <profiles>

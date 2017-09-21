@@ -1,0 +1,34 @@
+{
+  "@class":"org.apereo.cas.support.oauth.services.OAuthRegisteredService",
+  "clientId":"50bc2ba1ba4f2c5a2ee1",
+  "clientSecret":"1b35ae56499b14175c7f9ffe6de68ef3f51784da",
+  "serviceId":"^(http|imaps)://.*",
+  "name":"CasOAuthClient",
+  "id": 10000003,
+  "generateRefreshToken": true,
+  "jsonFormat": true,
+  "logoutType" : "BACK_CHANNEL",
+  "usernameAttributeProvider" : {
+    "@class" : "org.jasig.cas.services.PrincipalAttributeRegisteredServiceUsernameProvider",
+     "usernameAttribute" : "user"
+  },
+  "attributeReleasePolicy" : {
+   "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+   "allowedAttributes" : ["java.util.ArrayList",["name", "email", "display_name","username","login"]],
+   "excludeDefaultAttributes":true,
+   "principalAttributesRepository" : {
+      "@class" : "org.apereo.cas.authentication.principal.DefaultPrincipalAttributesRepository",
+      "duration" : {
+        "@class" : "javax.cache.expiry.Duration",
+        "timeUnit" : [ "java.util.concurrent.TimeUnit", "HOURS" ],
+        "expiration" : 2
+      }
+    }
+   },
+  "accessStrategy" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "enabled" : true,
+    "ssoEnabled" : true,
+    "requireAllAttributes" : true
+   }
+}
