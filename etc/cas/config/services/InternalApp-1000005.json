@@ -18,6 +18,9 @@
     "jwtEncryptionSecret" : {
       "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
       "values" : [ "java.util.HashSet", [ "FFJ0H_Kpe_tR4zIwOrYNcHcSqCg5zv3ED1I-dKG170I" ] ]
-    }*/
+    }*/,
+    "attributeReleasePolicy" : {
+      "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+    }
   }
 }
