@@ -4,13 +4,13 @@
   "name": "InternalApp",
   "id": 1000005,
   "evaluationOrder": 10,
-  "jsonFormat": true,/*
+  "jsonFormat": true,
   "properties" : {
     "@class" : "java.util.HashMap",
     "jwtAsResponse" : {
       "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
       "values" : [ "java.util.HashSet", [ "true" ] ]
-    },
+    }/*,
     "jwtSigningSecret" : {
       "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
       "values" : [ "java.util.HashSet", [ "pooJxehuHJ87J-poC0rKzsSrz_LUVtJyKdwVnpojZDMkRxnac_E3gh20ArWd-tyo3BhjpUqf12aqOBUmSY4-gQ" ] ]
@@ -21,8 +21,8 @@
     }
     "attributeReleasePolicy" : {
       "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
-    }
-  }*/
+    }*/
+  },
   "generateRefreshToken": true,
   "attributeReleasePolicy" : {
     "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
