@@ -23,6 +23,7 @@
       "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
     }
   }*/
+  "generateRefreshToken": true,
   "attributeReleasePolicy" : {
     "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
   }
