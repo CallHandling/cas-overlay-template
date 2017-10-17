@@ -1,0 +1,30 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "https://dev.callhandling.co.uk:8445/jasperserver-pro/j_spring_security_check",
+  "name": "JasperServerProDev",
+  "id": 1000006,
+  "evaluationOrder": 10,
+  "jsonFormat": true,
+  "properties" : {
+    "@class" : "java.util.HashMap",
+    "jwtAsResponse" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values" : [ "java.util.HashSet", [ "true" ] ]
+    }/*,
+    "jwtSigningSecret" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values" : [ "java.util.HashSet", [ "pooJxehuHJ87J-poC0rKzsSrz_LUVtJyKdwVnpojZDMkRxnac_E3gh20ArWd-tyo3BhjpUqf12aqOBUmSY4-gQ" ] ]
+    },
+    "jwtEncryptionSecret" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values" : [ "java.util.HashSet", [ "FFJ0H_Kpe_tR4zIwOrYNcHcSqCg5zv3ED1I-dKG170I" ] ]
+    }
+    "attributeReleasePolicy" : {
+      "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+    }*/
+  },
+  "generateRefreshToken": true,
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  }
+}
