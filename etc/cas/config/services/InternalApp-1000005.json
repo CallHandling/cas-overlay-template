@@ -1,6 +1,6 @@
 {
   "@class" : "org.apereo.cas.services.RegexRegisteredService",
-  "serviceId" : "http://10.0.0.27/auth",
+  "serviceId" : "http://10.0.0.27/auth|https://dev.callhandling.co.uk:8445/jasperserver-pro/j_spring_security_check",
   "name": "InternalApp",
   "id": 1000005,
   "evaluationOrder": 10,
